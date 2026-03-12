@@ -1,0 +1,98 @@
+[
+  {
+    "year": 2015,
+    "n_fights": 466,
+    "model_brier": 0.2339,
+    "closing_brier": 0.2306,
+    "beats_closing": false,
+    "accuracy": 0.599
+  },
+  {
+    "year": 2016,
+    "n_fights": 487,
+    "model_brier": 0.2276,
+    "closing_brier": 0.2179,
+    "beats_closing": false,
+    "accuracy": 0.618
+  },
+  {
+    "year": 2017,
+    "n_fights": 454,
+    "model_brier": 0.2191,
+    "closing_brier": 0.2144,
+    "beats_closing": false,
+    "accuracy": 0.663
+  },
+  {
+    "year": 2018,
+    "n_fights": 473,
+    "model_brier": 0.2228,
+    "closing_brier": 0.2213,
+    "beats_closing": false,
+    "accuracy": 0.638
+  },
+  {
+    "year": 2019,
+    "n_fights": 510,
+    "model_brier": 0.2348,
+    "closing_brier": 0.2415,
+    "beats_closing": true,
+    "accuracy": 0.598
+  },
+  {
+    "year": 2020,
+    "n_fights": 455,
+    "model_brier": 0.2142,
+    "closing_brier": 0.2293,
+    "beats_closing": true,
+    "accuracy": 0.67
+  },
+  {
+    "year": 2021,
+    "n_fights": 503,
+    "model_brier": 0.2324,
+    "closing_brier": 0.2367,
+    "beats_closing": true,
+    "accuracy": 0.598
+  },
+  {
+    "year": 2022,
+    "n_fights": 505,
+    "model_brier": 0.2192,
+    "closing_brier": 0.2289,
+    "beats_closing": true,
+    "accuracy": 0.644
+  },
+  {
+    "year": 2023,
+    "n_fights": 507,
+    "model_brier": 0.2286,
+    "closing_brier": 0.2183,
+    "beats_closing": false,
+    "accuracy": 0.615
+  },
+  {
+    "year": 2024,
+    "n_fights": 513,
+    "model_brier": 0.2085,
+    "closing_brier": 0.2062,
+    "beats_closing": false,
+    "accuracy": 0.7
+  },
+  {
+    "year": 2025,
+    "n_fights": 498,
+    "model_brier": 0.2163,
+    "closing_brier": 0.2042,
+    "beats_closing": false,
+    "accuracy": 0.661
+  },
+  {
+    "year": 2026,
+    "n_fights": 69,
+    "model_brier": 0.1986,
+    "closing_brier": 0.188,
+    "beats_closing": false,
+    "accuracy": 0.681
+  }
+]

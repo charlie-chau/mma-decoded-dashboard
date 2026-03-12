@@ -1,0 +1,121 @@
+{
+  "model_version": "V2",
+  "total_predictions": 4745,
+  "date_range": {
+    "start": "2015-01-03",
+    "end": "2026-03-07"
+  },
+  "brier_scores": {
+    "model_lr": 0.2213,
+    "closing_line": 0.2223,
+    "clv_gap": -0.001,
+    "beats_closing": true
+  },
+  "line_movement": {
+    "toward_model_pct": 57.3,
+    "avg_move_toward": 8.73,
+    "n_with_closing": 4745
+  },
+  "calibration": [
+    {
+      "bin_low": 0.0,
+      "bin_high": 0.1,
+      "mean_predicted": 0.0944,
+      "actual_win_rate": 0.5,
+      "count": 2
+    },
+    {
+      "bin_low": 0.1,
+      "bin_high": 0.2,
+      "mean_predicted": 0.1667,
+      "actual_win_rate": 0.2121,
+      "count": 33
+    },
+    {
+      "bin_low": 0.2,
+      "bin_high": 0.3,
+      "mean_predicted": 0.2601,
+      "actual_win_rate": 0.2721,
+      "count": 147
+    },
+    {
+      "bin_low": 0.3,
+      "bin_high": 0.4,
+      "mean_predicted": 0.3567,
+      "actual_win_rate": 0.2935,
+      "count": 477
+    },
+    {
+      "bin_low": 0.4,
+      "bin_high": 0.5,
+      "mean_predicted": 0.4519,
+      "actual_win_rate": 0.4412,
+      "count": 782
+    },
+    {
+      "bin_low": 0.5,
+      "bin_high": 0.6,
+      "mean_predicted": 0.5521,
+      "actual_win_rate": 0.5298,
+      "count": 1040
+    },
+    {
+      "bin_low": 0.6,
+      "bin_high": 0.7,
+      "mean_predicted": 0.65,
+      "actual_win_rate": 0.6445,
+      "count": 1159
+    },
+    {
+      "bin_low": 0.7,
+      "bin_high": 0.8,
+      "mean_predicted": 0.7447,
+      "actual_win_rate": 0.7284,
+      "count": 810
+    },
+    {
+      "bin_low": 0.8,
+      "bin_high": 0.9,
+      "mean_predicted": 0.8352,
+      "actual_win_rate": 0.8478,
+      "count": 276
+    },
+    {
+      "bin_low": 0.9,
+      "bin_high": 1.0,
+      "mean_predicted": 0.9272,
+      "actual_win_rate": 0.8947,
+      "count": 19
+    }
+  ],
+  "roi": [
+    {
+      "threshold": 0.03,
+      "n_bets": 3659,
+      "roi_pct": 3.7,
+      "win_rate": 0.491,
+      "profit_units": 137.1
+    },
+    {
+      "threshold": 0.05,
+      "n_bets": 2974,
+      "roi_pct": 6.6,
+      "win_rate": 0.494,
+      "profit_units": 197.5
+    },
+    {
+      "threshold": 0.08,
+      "n_bets": 2008,
+      "roi_pct": 13.1,
+      "win_rate": 0.506,
+      "profit_units": 264.0
+    },
+    {
+      "threshold": 0.1,
+      "n_bets": 1529,
+      "roi_pct": 17.4,
+      "win_rate": 0.51,
+      "profit_units": 266.8
+    }
+  ]
+}

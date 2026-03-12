@@ -1,0 +1,706 @@
+{
+  "as_of": "2026-03-08",
+  "total_rated": 91503,
+  "fighters": [
+    {
+      "rank": 1,
+      "name": "Jon Jones",
+      "elo": 1987.0,
+      "mu": 2473.68,
+      "phi": 91.17
+    },
+    {
+      "rank": 2,
+      "name": "Khamzat Chimaev",
+      "elo": 1866.0,
+      "mu": 2473.5,
+      "phi": 112.85
+    },
+    {
+      "rank": 3,
+      "name": "Georges St. Pierre",
+      "elo": 1970.0,
+      "mu": 2423.21,
+      "phi": 87.22
+    },
+    {
+      "rank": 4,
+      "name": "Islam Makhachev",
+      "elo": 1986.0,
+      "mu": 2406.06,
+      "phi": 83.89
+    },
+    {
+      "rank": 5,
+      "name": "Daniel Cormier",
+      "elo": 1884.0,
+      "mu": 2404.96,
+      "phi": 83.62
+    },
+    {
+      "rank": 6,
+      "name": "Khabib Nurmagomedov",
+      "elo": 1948.0,
+      "mu": 2389.95,
+      "phi": 95.41
+    },
+    {
+      "rank": 7,
+      "name": "Alex Pereira",
+      "elo": 1807.0,
+      "mu": 2369.1,
+      "phi": 107.92
+    },
+    {
+      "rank": 8,
+      "name": "Ilia Topuria",
+      "elo": 1861.0,
+      "mu": 2358.17,
+      "phi": 100.11
+    },
+    {
+      "rank": 9,
+      "name": "Yaroslav Amosov",
+      "elo": 1890.0,
+      "mu": 2341.45,
+      "phi": 94.13
+    },
+    {
+      "rank": 10,
+      "name": "Justin Gaethje",
+      "elo": 1931.0,
+      "mu": 2340.64,
+      "phi": 76.96
+    },
+    {
+      "rank": 11,
+      "name": "Magomed Ankalaev",
+      "elo": 1899.0,
+      "mu": 2333.3,
+      "phi": 84.51
+    },
+    {
+      "rank": 12,
+      "name": "Movsar Evloev",
+      "elo": 1863.0,
+      "mu": 2332.45,
+      "phi": 95.99
+    },
+    {
+      "rank": 13,
+      "name": "Sean Brady",
+      "elo": 1843.0,
+      "mu": 2329.27,
+      "phi": 93.81
+    },
+    {
+      "rank": 14,
+      "name": "Ciryl Gane",
+      "elo": 1786.0,
+      "mu": 2325.55,
+      "phi": 97.19
+    },
+    {
+      "rank": 15,
+      "name": "Umar Nurmagomedov",
+      "elo": 1876.0,
+      "mu": 2323.56,
+      "phi": 97.55
+    },
+    {
+      "rank": 16,
+      "name": "Stipe Miocic",
+      "elo": 1853.0,
+      "mu": 2320.28,
+      "phi": 92.1
+    },
+    {
+      "rank": 17,
+      "name": "Kamaru Usman",
+      "elo": 1858.0,
+      "mu": 2319.43,
+      "phi": 81.76
+    },
+    {
+      "rank": 18,
+      "name": "Cristiane Justino",
+      "elo": 1887.0,
+      "mu": 2316.73,
+      "phi": 109.73
+    },
+    {
+      "rank": 19,
+      "name": "Cain Velasquez",
+      "elo": 1762.0,
+      "mu": 2305.44,
+      "phi": 102.81
+    },
+    {
+      "rank": 20,
+      "name": "Michael Page",
+      "elo": 1866.0,
+      "mu": 2305.06,
+      "phi": 90.89
+    },
+    {
+      "rank": 21,
+      "name": "Demetrious Johnson",
+      "elo": 1906.0,
+      "mu": 2301.87,
+      "phi": 80.18
+    },
+    {
+      "rank": 22,
+      "name": "Carlos Ulberg",
+      "elo": 1775.0,
+      "mu": 2301.74,
+      "phi": 112.98
+    },
+    {
+      "rank": 23,
+      "name": "Ryan Bader",
+      "elo": 1892.0,
+      "mu": 2298.79,
+      "phi": 70.92
+    },
+    {
+      "rank": 24,
+      "name": "Alexander Volkanovski",
+      "elo": 1913.0,
+      "mu": 2297.99,
+      "phi": 78.83
+    },
+    {
+      "rank": 25,
+      "name": "Azamat Murzakanov",
+      "elo": 1785.0,
+      "mu": 2297.23,
+      "phi": 122.33
+    },
+    {
+      "rank": 26,
+      "name": "Anthony Johnson",
+      "elo": 1859.0,
+      "mu": 2294.63,
+      "phi": 83.45
+    },
+    {
+      "rank": 27,
+      "name": "Valentina Shevchenko",
+      "elo": 1863.0,
+      "mu": 2293.87,
+      "phi": 101.27
+    },
+    {
+      "rank": 28,
+      "name": "Charles Oliveira",
+      "elo": 1939.0,
+      "mu": 2293.39,
+      "phi": 66.63
+    },
+    {
+      "rank": 29,
+      "name": "Gegard Mousasi",
+      "elo": 1913.0,
+      "mu": 2291.48,
+      "phi": 73.53
+    },
+    {
+      "rank": 30,
+      "name": "Ben Askren",
+      "elo": 1836.0,
+      "mu": 2290.44,
+      "phi": 93.45
+    },
+    {
+      "rank": 31,
+      "name": "Fedor Emelianenko",
+      "elo": 1885.0,
+      "mu": 2290.16,
+      "phi": 90.49
+    },
+    {
+      "rank": 32,
+      "name": "Shavkat Rakhmonov",
+      "elo": 1911.0,
+      "mu": 2288.43,
+      "phi": 89.66
+    },
+    {
+      "rank": 33,
+      "name": "Lerone Murphy",
+      "elo": 1843.0,
+      "mu": 2287.39,
+      "phi": 97.15
+    },
+    {
+      "rank": 34,
+      "name": "Michael Morales",
+      "elo": 1839.0,
+      "mu": 2286.35,
+      "phi": 98.4
+    },
+    {
+      "rank": 35,
+      "name": "Francis Ngannou",
+      "elo": 1800.0,
+      "mu": 2284.79,
+      "phi": 92.19
+    },
+    {
+      "rank": 36,
+      "name": "Patricio Freire",
+      "elo": 1899.0,
+      "mu": 2278.35,
+      "phi": 99.52
+    },
+    {
+      "rank": 37,
+      "name": "Arman Tsarukyan",
+      "elo": 1885.0,
+      "mu": 2274.68,
+      "phi": 83.0
+    },
+    {
+      "rank": 38,
+      "name": "Max Holloway",
+      "elo": 1887.0,
+      "mu": 2274.48,
+      "phi": 72.86
+    },
+    {
+      "rank": 39,
+      "name": "Dricus Du Plessis",
+      "elo": 1878.0,
+      "mu": 2270.92,
+      "phi": 80.24
+    },
+    {
+      "rank": 40,
+      "name": "Merab Dvalishvili",
+      "elo": 1877.0,
+      "mu": 2269.72,
+      "phi": 83.52
+    },
+    {
+      "rank": 41,
+      "name": "Sergei Pavlovich",
+      "elo": 1808.0,
+      "mu": 2266.7,
+      "phi": 94.68
+    },
+    {
+      "rank": 42,
+      "name": "Mateusz Gamrot",
+      "elo": 1857.0,
+      "mu": 2265.95,
+      "phi": 84.24
+    },
+    {
+      "rank": 43,
+      "name": "Ian Garry",
+      "elo": 1879.0,
+      "mu": 2265.84,
+      "phi": 86.2
+    },
+    {
+      "rank": 44,
+      "name": "Kyoji Horiguchi",
+      "elo": 1918.0,
+      "mu": 2265.21,
+      "phi": 79.67
+    },
+    {
+      "rank": 45,
+      "name": "A.J. McKee",
+      "elo": 1897.0,
+      "mu": 2264.02,
+      "phi": 81.0
+    },
+    {
+      "rank": 46,
+      "name": "Muhammad Mokaev",
+      "elo": 1896.0,
+      "mu": 2262.79,
+      "phi": 108.79
+    },
+    {
+      "rank": 47,
+      "name": "Dustin Poirier",
+      "elo": 1869.0,
+      "mu": 2262.11,
+      "phi": 70.24
+    },
+    {
+      "rank": 48,
+      "name": "Aljamain Sterling",
+      "elo": 1879.0,
+      "mu": 2261.98,
+      "phi": 81.24
+    },
+    {
+      "rank": 49,
+      "name": "Ramazan Kuramagomedov",
+      "elo": 1817.0,
+      "mu": 2261.88,
+      "phi": 104.11
+    },
+    {
+      "rank": 50,
+      "name": "Sharabutdin Magomedov",
+      "elo": 1805.0,
+      "mu": 2260.69,
+      "phi": 113.7
+    },
+    {
+      "rank": 51,
+      "name": "Curtis Blaydes",
+      "elo": 1810.0,
+      "mu": 2260.42,
+      "phi": 83.86
+    },
+    {
+      "rank": 52,
+      "name": "Gabriel Bonfim",
+      "elo": 1810.0,
+      "mu": 2259.87,
+      "phi": 109.94
+    },
+    {
+      "rank": 53,
+      "name": "Belal Muhammad",
+      "elo": 1870.0,
+      "mu": 2257.89,
+      "phi": 76.03
+    },
+    {
+      "rank": 54,
+      "name": "Josh Barnett",
+      "elo": 1847.0,
+      "mu": 2256.15,
+      "phi": 92.47
+    },
+    {
+      "rank": 55,
+      "name": "Israel Adesanya",
+      "elo": 1812.0,
+      "mu": 2251.95,
+      "phi": 101.3
+    },
+    {
+      "rank": 56,
+      "name": "Brendan Allen",
+      "elo": 1872.0,
+      "mu": 2251.0,
+      "phi": 74.23
+    },
+    {
+      "rank": 57,
+      "name": "Phil Davis",
+      "elo": 1800.0,
+      "mu": 2250.86,
+      "phi": 78.97
+    },
+    {
+      "rank": 58,
+      "name": "Glover Teixeira",
+      "elo": 1847.0,
+      "mu": 2250.28,
+      "phi": 99.98
+    },
+    {
+      "rank": 59,
+      "name": "Sean Strickland",
+      "elo": 1855.0,
+      "mu": 2248.83,
+      "phi": 80.25
+    },
+    {
+      "rank": 60,
+      "name": "Beneil Dariush",
+      "elo": 1826.0,
+      "mu": 2247.48,
+      "phi": 88.53
+    },
+    {
+      "rank": 61,
+      "name": "Farid Basharat",
+      "elo": 1799.0,
+      "mu": 2247.21,
+      "phi": 114.39
+    },
+    {
+      "rank": 62,
+      "name": "Yoel Romero",
+      "elo": 1749.0,
+      "mu": 2244.16,
+      "phi": 95.36
+    },
+    {
+      "rank": 63,
+      "name": "Grant Dawson",
+      "elo": 1863.0,
+      "mu": 2240.72,
+      "phi": 85.72
+    },
+    {
+      "rank": 64,
+      "name": "Robert Whittaker",
+      "elo": 1817.0,
+      "mu": 2238.93,
+      "phi": 77.03
+    },
+    {
+      "rank": 65,
+      "name": "Tatiana Suarez",
+      "elo": 1763.0,
+      "mu": 2238.41,
+      "phi": 117.0
+    },
+    {
+      "rank": 66,
+      "name": "Olivier Aubin-Mercier",
+      "elo": 1867.0,
+      "mu": 2238.01,
+      "phi": 83.72
+    },
+    {
+      "rank": 67,
+      "name": "Kayla Harrison",
+      "elo": 1792.0,
+      "mu": 2237.36,
+      "phi": 102.4
+    },
+    {
+      "rank": 68,
+      "name": "Jiri Prochazka",
+      "elo": 1867.0,
+      "mu": 2236.55,
+      "phi": 83.77
+    },
+    {
+      "rank": 69,
+      "name": "Mario Bautista",
+      "elo": 1823.0,
+      "mu": 2236.36,
+      "phi": 99.7
+    },
+    {
+      "rank": 70,
+      "name": "Waldo Cortes-Acosta",
+      "elo": 1817.0,
+      "mu": 2235.44,
+      "phi": 103.47
+    },
+    {
+      "rank": 71,
+      "name": "Tom Aspinall",
+      "elo": 1800.0,
+      "mu": 2235.0,
+      "phi": 108.99
+    },
+    {
+      "rank": 72,
+      "name": "Dominick Cruz",
+      "elo": 1823.0,
+      "mu": 2233.64,
+      "phi": 98.16
+    },
+    {
+      "rank": 73,
+      "name": "Demian Maia",
+      "elo": 1813.0,
+      "mu": 2233.34,
+      "phi": 92.76
+    },
+    {
+      "rank": 74,
+      "name": "Erin Blanchfield",
+      "elo": 1766.0,
+      "mu": 2230.65,
+      "phi": 101.39
+    },
+    {
+      "rank": 75,
+      "name": "Gregor Gillespie",
+      "elo": 1763.0,
+      "mu": 2230.29,
+      "phi": 101.71
+    },
+    {
+      "rank": 76,
+      "name": "Mirko Filipovic",
+      "elo": 1841.0,
+      "mu": 2229.04,
+      "phi": 81.24
+    },
+    {
+      "rank": 77,
+      "name": "Petr Yan",
+      "elo": 1836.0,
+      "mu": 2227.78,
+      "phi": 83.98
+    },
+    {
+      "rank": 78,
+      "name": "Ikram Aliskerov",
+      "elo": 1781.0,
+      "mu": 2226.5,
+      "phi": 108.78
+    },
+    {
+      "rank": 79,
+      "name": "Caio Borralho",
+      "elo": 1815.0,
+      "mu": 2225.6,
+      "phi": 92.17
+    },
+    {
+      "rank": 80,
+      "name": "Ivan Shtyrkov",
+      "elo": 1816.0,
+      "mu": 2224.97,
+      "phi": 87.63
+    },
+    {
+      "rank": 81,
+      "name": "Nassourdine Imavov",
+      "elo": 1808.0,
+      "mu": 2224.33,
+      "phi": 94.13
+    },
+    {
+      "rank": 82,
+      "name": "Reinier de Ridder",
+      "elo": 1797.0,
+      "mu": 2223.66,
+      "phi": 96.37
+    },
+    {
+      "rank": 83,
+      "name": "Alexander Volkov",
+      "elo": 1853.0,
+      "mu": 2221.1,
+      "phi": 72.14
+    },
+    {
+      "rank": 84,
+      "name": "Benoit St. Denis",
+      "elo": 1805.0,
+      "mu": 2218.48,
+      "phi": 89.01
+    },
+    {
+      "rank": 85,
+      "name": "Andrey Koreshkov",
+      "elo": 1845.0,
+      "mu": 2218.42,
+      "phi": 83.83
+    },
+    {
+      "rank": 86,
+      "name": "Colby Covington",
+      "elo": 1773.0,
+      "mu": 2217.81,
+      "phi": 102.43
+    },
+    {
+      "rank": 87,
+      "name": "Jack Della Maddalena",
+      "elo": 1838.0,
+      "mu": 2217.33,
+      "phi": 89.03
+    },
+    {
+      "rank": 88,
+      "name": "Gilbert Burns",
+      "elo": 1768.0,
+      "mu": 2216.36,
+      "phi": 77.03
+    },
+    {
+      "rank": 89,
+      "name": "Leon Edwards",
+      "elo": 1836.0,
+      "mu": 2216.08,
+      "phi": 81.37
+    },
+    {
+      "rank": 90,
+      "name": "Rustam Khabilov",
+      "elo": 1821.0,
+      "mu": 2214.59,
+      "phi": 91.47
+    },
+    {
+      "rank": 91,
+      "name": "T.J. Dillashaw",
+      "elo": 1814.0,
+      "mu": 2214.2,
+      "phi": 85.05
+    },
+    {
+      "rank": 92,
+      "name": "Patrick Mix",
+      "elo": 1793.0,
+      "mu": 2213.93,
+      "phi": 92.63
+    },
+    {
+      "rank": 93,
+      "name": "Weili Zhang",
+      "elo": 1836.0,
+      "mu": 2212.46,
+      "phi": 84.85
+    },
+    {
+      "rank": 94,
+      "name": "Elias Theodorou",
+      "elo": 1786.0,
+      "mu": 2211.58,
+      "phi": 92.28
+    },
+    {
+      "rank": 95,
+      "name": "Will Brooks",
+      "elo": 1847.0,
+      "mu": 2211.14,
+      "phi": 81.22
+    },
+    {
+      "rank": 96,
+      "name": "Lyoto Machida",
+      "elo": 1755.0,
+      "mu": 2209.55,
+      "phi": 85.05
+    },
+    {
+      "rank": 97,
+      "name": "Phil De Fries",
+      "elo": 1855.0,
+      "mu": 2207.83,
+      "phi": 87.44
+    },
+    {
+      "rank": 98,
+      "name": "Derek Brunson",
+      "elo": 1813.0,
+      "mu": 2205.46,
+      "phi": 74.37
+    },
+    {
+      "rank": 99,
+      "name": "Daniel Rodriguez",
+      "elo": 1811.0,
+      "mu": 2205.36,
+      "phi": 87.39
+    },
+    {
+      "rank": 100,
+      "name": "Sean Sherk",
+      "elo": 1825.0,
+      "mu": 2202.97,
+      "phi": 84.84
+    }
+  ]
+}
