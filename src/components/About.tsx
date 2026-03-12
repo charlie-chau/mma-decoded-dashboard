@@ -71,7 +71,7 @@ export default function About() {
           </li>
           <li>
             <a
-              href="https://github.com/mmadecoded/dashboard"
+              href="https://github.com/charlie-chau/mma-decoded-dashboard"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[var(--accent)] hover:underline"
