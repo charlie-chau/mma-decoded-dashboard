@@ -117,5 +117,35 @@
       "win_rate": 0.51,
       "profit_units": 266.8
     }
+  ],
+  "segments": [
+    {
+      "segment": "< 5%",
+      "n_fights": 1888,
+      "n_bets": 1771,
+      "roi_pct": -8.69900384759068,
+      "profit_units": -154.05935814083094
+    },
+    {
+      "segment": "5-10%",
+      "n_fights": 1552,
+      "n_bets": 1445,
+      "roi_pct": -4.7968268501173466,
+      "profit_units": -69.31414798419566
+    },
+    {
+      "segment": "10-15%",
+      "n_fights": 904,
+      "n_bets": 831,
+      "roi_pct": 9.576846321869969,
+      "profit_units": 79.58359293473944
+    },
+    {
+      "segment": "15%+",
+      "n_fights": 758,
+      "n_bets": 698,
+      "roi_pct": 26.816828604920605,
+      "profit_units": 187.18146366234583
+    }
   ]
 }

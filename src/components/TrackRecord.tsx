@@ -15,6 +15,7 @@ import {
   ScatterChart,
   Scatter,
   ReferenceLine,
+  Cell,
 } from "recharts";
 import InfoTip from "./Tooltip";
 
@@ -45,6 +46,13 @@ interface Metrics {
     n_bets: number;
     roi_pct: number;
     win_rate: number;
+    profit_units: number;
+  }[];
+  segments: {
+    segment: string;
+    n_fights: number;
+    n_bets: number;
+    roi_pct: number;
     profit_units: number;
   }[];
 }
@@ -325,6 +333,85 @@ export default function TrackRecord() {
           </ResponsiveContainer>
         </div>
       </div>
+
+      {/* Segment analysis — where does the edge live? */}
+      {metrics.segments && metrics.segments.length > 0 && (
+        <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6">
+          <h3 className="text-sm font-semibold mb-4 text-[var(--muted)] uppercase tracking-wider">
+            Where the Edge Lives
+            <InfoTip text="Backtest ROI segmented by how much the model disagrees with the market. All profit comes from high-disagreement fights (10%+). When the model strongly disagrees with the market, it's usually because the market overreacted to news — and the model, seeing only numbers, doesn't panic." />
+          </h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <ResponsiveContainer width="100%" height={250}>
+              <BarChart data={metrics.segments.map(s => ({
+                ...s,
+                roi_pct: Math.round(s.roi_pct * 10) / 10,
+                profit_units: Math.round(s.profit_units),
+              }))}>
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                <XAxis dataKey="segment" stroke="var(--muted)" fontSize={12} />
+                <YAxis
+                  stroke="var(--muted)"
+                  fontSize={12}
+                  tickFormatter={(v: number) => `${v}%`}
+                />
+                <Tooltip
+                  contentStyle={{
+                    backgroundColor: "var(--card)",
+                    border: "1px solid var(--border)",
+                    borderRadius: 8,
+                    fontSize: 12,
+                  }}
+                  formatter={(value: number, name: string) => [
+                    name === "roi_pct" ? `${value}%` : `${value}u`,
+                    name === "roi_pct" ? "ROI" : "Profit",
+                  ]}
+                />
+                <ReferenceLine y={0} stroke="var(--muted)" strokeDasharray="3 3" />
+                <Bar
+                  dataKey="roi_pct"
+                  name="ROI %"
+                  radius={[4, 4, 0, 0]}
+                >
+                  {metrics.segments.map((s, i) => (
+                    <Cell key={i} fill={s.roi_pct >= 0 ? "var(--green)" : "var(--red)"} />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+            <div className="flex flex-col justify-center">
+              <table className="text-sm w-full">
+                <thead>
+                  <tr className="border-b border-[var(--border)]">
+                    <th className="text-left py-1.5 px-2 text-[var(--muted)] font-medium">Gap</th>
+                    <th className="text-right py-1.5 px-2 text-[var(--muted)] font-medium">Fights</th>
+                    <th className="text-right py-1.5 px-2 text-[var(--muted)] font-medium">ROI</th>
+                    <th className="text-right py-1.5 px-2 text-[var(--muted)] font-medium">Profit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {metrics.segments.map((s) => (
+                    <tr key={s.segment} className="border-b border-[var(--border)]/50">
+                      <td className="py-1.5 px-2 font-medium">{s.segment}</td>
+                      <td className="py-1.5 px-2 text-right tabular-nums">{s.n_fights.toLocaleString()}</td>
+                      <td className={`py-1.5 px-2 text-right tabular-nums ${
+                        s.roi_pct >= 0 ? "text-[var(--green)]" : "text-[var(--red)]"
+                      }`}>
+                        {s.roi_pct >= 0 ? "+" : ""}{s.roi_pct.toFixed(1)}%
+                      </td>
+                      <td className={`py-1.5 px-2 text-right tabular-nums ${
+                        s.profit_units >= 0 ? "text-[var(--green)]" : "text-[var(--red)]"
+                      }`}>
+                        {s.profit_units >= 0 ? "+" : ""}{Math.round(s.profit_units)}u
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Yearly breakdown table */}
       <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6">

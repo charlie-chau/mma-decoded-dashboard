@@ -55,6 +55,38 @@ export default function Methodology() {
       </div>
 
       <div>
+        <h3 className="text-base font-semibold mb-2">Betting Strategy</h3>
+        <p className="text-[var(--muted)] leading-relaxed mb-3">
+          The model&apos;s predictions are purely quantitative — Glicko-2 ratings,
+          fight stats, and market odds. But our betting strategy layers on
+          additional signals to decide <em>which</em> fights to bet and{" "}
+          <em>how much</em>.
+        </p>
+        <ul className="text-[var(--muted)] space-y-1.5 list-disc list-inside">
+          <li>
+            <span className="text-[var(--fg)]">Minimum 8% edge</span> — we only
+            bet when the model disagrees with the market by at least 8%. Backtest
+            shows all profit concentrates in high-disagreement fights.
+          </li>
+          <li>
+            <span className="text-[var(--fg)]">Tiered Kelly sizing</span> —
+            standard Kelly fraction for 8-12% edges, higher conviction sizing
+            for 12%+ edges. Bigger disagreement = bigger bet.
+          </li>
+          <li>
+            <span className="text-[var(--fg)]">Qualitative confidence signals</span>{" "}
+            — short-notice replacements, missed weight, and other news-driven
+            events are used as confidence adjusters, not prediction inputs. When
+            qualitative factors align with the model&apos;s edge (e.g., model
+            already favours Fighter A, and Fighter B is a late replacement), we
+            size up. When they conflict, we size down. The model profits by
+            being immune to market overreaction — we don&apos;t adjust predictions,
+            we adjust conviction.
+          </li>
+        </ul>
+      </div>
+
+      <div>
         <h3 className="text-base font-semibold mb-2">
           What &quot;Beats Closing Line&quot; Means
         </h3>
@@ -100,6 +132,13 @@ export default function Methodology() {
                 <td className="py-2 px-3 text-right">200K+ MMA fights</td>
                 <td className="py-2 px-3">
                   Glicko-2 ratings (all promotions)
+                </td>
+              </tr>
+              <tr className="border-b border-[var(--border)]/50">
+                <td className="py-2 px-3 text-[var(--fg)]">BetMMA.tips</td>
+                <td className="py-2 px-3 text-right">800+ events</td>
+                <td className="py-2 px-3">
+                  Qualitative signals (short notice, missed weight)
                 </td>
               </tr>
             </tbody>

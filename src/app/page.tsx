@@ -5,8 +5,9 @@ import TrackRecord from "@/components/TrackRecord";
 import Ratings from "@/components/Ratings";
 import Methodology from "@/components/Methodology";
 import About from "@/components/About";
+import LiveBets from "@/components/LiveBets";
 
-const TABS = ["Track Record", "Ratings", "Methodology", "About"] as const;
+const TABS = ["Track Record", "Live Bets", "Ratings", "Methodology", "About"] as const;
 type Tab = (typeof TABS)[number];
 
 export default function Home() {
@@ -39,6 +40,7 @@ export default function Home() {
 
       <main className="mx-auto max-w-6xl px-6 py-8">
         {tab === "Track Record" && <TrackRecord />}
+        {tab === "Live Bets" && <LiveBets />}
         {tab === "Ratings" && <Ratings />}
         {tab === "Methodology" && <Methodology />}
         {tab === "About" && <About />}
