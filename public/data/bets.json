@@ -9,13 +9,13 @@
           "opponent": "Bruno Silva",
           "odds": -178.0,
           "decimal_odds": 1.562,
-          "stake": 100.0,
+          "stake_pct": 5.0,
           "edge": 0.179,
           "model_prob": 0.82,
           "market_prob": 0.641,
           "tier": "HIGH CONVICTION",
           "status": "pending",
-          "profit": null,
+          "profit_pct": null,
           "clv": null
         },
         {
@@ -23,13 +23,13 @@
           "opponent": "Sam Hughes",
           "odds": -156.0,
           "decimal_odds": 1.641,
-          "stake": 100.0,
+          "stake_pct": 5.0,
           "edge": 0.114,
           "model_prob": 0.724,
           "market_prob": 0.61,
           "tier": "HIGH CONVICTION",
           "status": "pending",
-          "profit": null,
+          "profit_pct": null,
           "clv": null
         },
         {
@@ -37,13 +37,13 @@
           "opponent": "Beatriz Mesquita",
           "odds": 475.0,
           "decimal_odds": 5.75,
-          "stake": 60.0,
+          "stake_pct": 3.0,
           "edge": 0.111,
           "model_prob": 0.285,
           "market_prob": 0.174,
           "tier": "STANDARD",
           "status": "pending",
-          "profit": null,
+          "profit_pct": null,
           "clv": null
         },
         {
@@ -51,13 +51,13 @@
           "opponent": "Manoel Sousa",
           "odds": 246.0,
           "decimal_odds": 3.46,
-          "stake": 60.0,
+          "stake_pct": 3.0,
           "edge": 0.099,
           "model_prob": 0.388,
           "market_prob": 0.289,
           "tier": "STANDARD",
           "status": "pending",
-          "profit": null,
+          "profit_pct": null,
           "clv": null
         }
       ]
@@ -69,8 +69,8 @@
     "settled": 0,
     "won": 0,
     "lost": 0,
-    "total_staked": 0,
-    "total_profit": 0,
+    "total_staked_pct": 0.0,
+    "total_profit_pct": 0.0,
     "roi_pct": 0
   }
 }

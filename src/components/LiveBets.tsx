@@ -8,13 +8,13 @@ interface Bet {
   opponent: string;
   odds: number;
   decimal_odds: number;
-  stake: number;
+  stake_pct: number;
   edge: number;
   model_prob: number;
   market_prob: number;
   tier: string;
   status: string;
-  profit: number | null;
+  profit_pct: number | null;
   clv: number | null;
 }
 
@@ -32,8 +32,8 @@ interface BetsData {
     settled: number;
     won: number;
     lost: number;
-    total_staked: number;
-    total_profit: number;
+    total_staked_pct: number;
+    total_profit_pct: number;
     roi_pct: number;
   };
 }
@@ -134,17 +134,17 @@ export default function LiveBets() {
         <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-4">
           <div className="text-xs text-[var(--muted)] uppercase tracking-wide flex items-center gap-1">
             P&L
-            <InfoTip text="Total profit/loss from settled bets" />
+            <InfoTip text="Total profit/loss as % of bankroll from settled bets" />
           </div>
           <div
             className={`text-2xl font-bold mt-1 ${
-              summary.total_profit >= 0 ? "text-green-400" : "text-red-400"
+              summary.total_profit_pct >= 0 ? "text-green-400" : "text-red-400"
             }`}
           >
-            {summary.total_profit >= 0 ? "+" : ""}${summary.total_profit.toFixed(0)}
+            {summary.total_profit_pct >= 0 ? "+" : ""}{summary.total_profit_pct.toFixed(1)}%
           </div>
           <div className="text-xs text-[var(--muted)] mt-1">
-            ${summary.total_staked.toFixed(0)} staked
+            {summary.total_staked_pct.toFixed(1)}% staked
           </div>
         </div>
         <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-4">
@@ -219,8 +219,8 @@ export default function LiveBets() {
                     <td className="px-4 py-2.5 text-right font-mono text-xs text-[var(--accent)]">
                       +{(bet.edge * 100).toFixed(1)}%
                     </td>
-                    <td className="px-4 py-2.5 text-right font-mono">
-                      ${bet.stake.toFixed(0)}
+                    <td className="px-4 py-2.5 text-right font-mono text-xs">
+                      {bet.stake_pct}%
                     </td>
                     <td className="px-4 py-2.5 text-center">
                       {tierBadge(bet.tier)}
@@ -229,16 +229,16 @@ export default function LiveBets() {
                       {statusBadge(bet.status)}
                     </td>
                     <td
-                      className={`px-4 py-2.5 text-right font-mono ${
-                        bet.profit !== null
-                          ? bet.profit >= 0
+                      className={`px-4 py-2.5 text-right font-mono text-xs ${
+                        bet.profit_pct !== null
+                          ? bet.profit_pct >= 0
                             ? "text-green-400"
                             : "text-red-400"
                           : "text-[var(--muted)]"
                       }`}
                     >
-                      {bet.profit !== null
-                        ? `${bet.profit >= 0 ? "+" : ""}$${bet.profit.toFixed(0)}`
+                      {bet.profit_pct !== null
+                        ? `${bet.profit_pct >= 0 ? "+" : ""}${bet.profit_pct.toFixed(1)}%`
                         : "—"}
                     </td>
                   </tr>
